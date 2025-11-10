@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet" />
+  <title>ZenZone - Tic Tac Toe</title>
+  <link rel="stylesheet" href="../css/childTherapy.css" />
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .department_section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .heading_container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .box {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .detail-box h5 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav>
+    <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo" /></a>
+
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <!-- <li><a href="#about" class=".smooth-scroll">ABOUT</a></li>
+        <li><a href="#images" class=".smooth-scroll">IMAGES </a></li>
+        <li><a href="#videos" class=".smooth-scroll">VIDEOS </a></li> -->
+      </ul>
+    </div>
+    <div class="hamburger" id="ham">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+        </path>
+      </svg>
+    </div>
+
+  </nav>
+
+  <!-- Mobile Layout Navbar -->
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <!-- <li><a class="close" href="#about">ABOUT</a></li>
+      <li><a class="close" href="#images">IMAGES </a></li>
+      <li><a class="close" href="#videos">VIDEOS </a></li> -->
+    </ul>
+  </div>
+  <!-- Mobile Layout Navbar Ends Here -->
+
+  <!-- Navbar Section Ends Here -->
+
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <!-- <li><a class="close" href="#about">ABOUT</a></li>
+      <li><a class="close" href="#images">IMAGES </a></li>
+      <li><a class="close" href="#videos">VIDEOS </a></li> -->
+    </ul>
+  </div>
+
+</br></br></br>
+
+  <style>
+    body {
+    background: url("https://images.pexels.com/photos/278918/pexels-photo-278918.jpeg");
+    color: white;
+  }
+  
+  body {
+    background: url("https://images.pexels.com/photos/278918/pexels-photo-278918.jpeg");
+    color: white;
+  }
+  
+  #admin {
+    margin-top: 10%;
+    border-top: 2px solid white;
+  }
+  
+  #container {
+    /*   background: #574b60; */
+    /*   width: 40vw; */
+    height: 35vw;
+    /*   margin: 0 auto; */
+  }
+  
+  .col-sm {
+    height: 25%;
+    /*   border: solid 3px #f0ffce; */
+    text-align: center;
+    color: #f2f8d8;
+    font-size: 2em;
+    padding-top: 2vw;
+  }
+  
+  #cell1,
+  #cell2,
+  #cell4,
+  #cell5,
+  #cell7,
+  #cell8 {
+    border-right: solid 4px white;
+  }
+  
+  #cell1,
+  #cell2,
+  #cell3,
+  #cell4,
+  #cell5,
+  #cell6 {
+    border-bottom: solid 4px white;
+  }
+  
+  #admin {
+    margin-top: 10%;
+    border-top: 2px solid white;
+  }
+  
+  #container {
+    /*   background: #574b60; */
+    /*   width: 40vw; */
+    height: 35vw;
+    /*   margin: 0 auto; */
+  }
+  
+  .col-sm {
+    height: 25%;
+    /*   border: solid 3px #f0ffce; */
+    text-align: center;
+    color: #f2f8d8;
+    font-size: 2em;
+    padding-top: 2vw;
+  }
+  
+  #cell1,
+  #cell2,
+  #cell4,
+  #cell5,
+  #cell7,
+  #cell8 {
+    border-right: solid 4px white;
+  }
+  
+  #cell1,
+  #cell2,
+  #cell3,
+  #cell4,
+  #cell5,
+  #cell6 {
+    border-bottom: solid 4px white;
+  }
+  
+  #cell1,
+  #cell2,
+  #cell3,
+  #cell4,
+  #cell5,
+  #cell6,
+  #cell7,
+  #cell8,
+  #cell9 {
+    height: 150px;
+    width: 150px;
+  }
+  
+  #row1 {
+    margin-top: 25px;
+  }
+   </style>
+  
+    <title>Tic Tac Toe || Drew Mercer</title>
+  </head>
+  
+  <body>
+  
+    <div class="container text-center">
+      <h1>Tic-Tac-Toe</h1>
+     
+  
+      <div class="container">
+        <div class="row" id="row1">
+          <div class="col-sm" id="cell1">
+          </div>
+          <div class="col-sm" id="cell2">
+          </div>
+          <div class="col-sm" id="cell3">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="cell4">
+          </div>
+          <div class="col-sm" id="cell5">
+          </div>
+          <div class="col-sm" id="cell6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm" id="cell7">
+          </div>
+          <div class="col-sm" id="cell8">
+          </div>
+          <div class="col-sm" id="cell9">
+          </div>
+        </div>
+  
+      </div>
+      <div class="row" id="admin">
+        <div class="col-md">
+          <div class="container" id="choose">
+            <p>Choose your icon:</p>
+            <input type="radio" id="x" value="X" name="choose" checked/>
+            <label for="x">X </label>
+            <input type="radio" id="o" value="O" name="choose" />
+  
+            <label for="o">O</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <!-- Placeholder -->
+        </div>
+        <div class="col-md">
+          <button class="btn btn-danger" id="reset">Reset</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Linking to jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+      let cellArray = ["1","2","3","4","5","6","7","8","9"]
+      
+          $(".col-sm").on("click", function() {
+          
+         if ($(this).text().length > 0) {
+            alert("Invalid move! Make sure you have chosen to play as X or O and that you haven't selected a previously played square.");
+            return;
+          }
+          
+         if($("#x").is(":checked")){
+           $(this).text("X");
+          } else {
+           $(this).text("O"); 
+         }  
+         
+         checkUp();
+      
+         let divNeeded = $(this).attr("id");
+         let numberNeeded = divNeeded.substr(divNeeded.length - 1);
+         cellArray.splice(cellArray.indexOf(numberNeeded), 1);
+           if (conditionArray.indexOf("true") > 0) {
+           return;
+         } else {
+           setTimeout(computerMove, 500);    
+        }   
+       }); 
+      
+      $("#x, #o").on("click", clear);   
+      $("#reset").on("click", clear); 
+      
+      function status() {
+        conditionArray.push("true");
+      }
+      
+      function clear() {
+        $(".col-sm").html("");
+        $("#cell1, #cell2, #cell3, #cell4, #cell5, #cell6, #cell7, #cell8, #cell9").css("background", "initial");
+        conditionArray = [];
+        cellArray = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+      }; 
+      
+      function checkUp() {
+       var newHtml;  
+       
+       if ($("#cell1, #cell2, #cell3").text() == "XXX" || $("#cell1, #cell2, #cell3").text() == "OOO") {
+        $("#cell1, #cell2, #cell3").css("background", "green");
+        
+        status(); 
+         
+        if ($("#cell1, #cell2, #cell3").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell1, #cell2, #cell3").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell1, #cell2, #cell3").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell1, #cell2, #cell3").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+        setTimeout(clear, 1000);
+        
+       } else if ($("#cell4, #cell5, #cell6").text() == "XXX" || $("#cell4, #cell5, #cell6").text() == "OOO") {
+        $("#cell4, #cell5, #cell6").css("background", "green");
+         
+        status(); 
+         
+        if ($("#cell4, #cell5, #cell6").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell4, #cell5, #cell6").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell4, #cell5, #cell6").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell4, #cell5, #cell6").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell7, #cell8, #cell9").text() == "XXX" || $("#cell7, #cell8, #cell9").text() == "OOO") {
+        $("#cell7, #cell8, #cell9").css("background", "green");
+        
+        status(); 
+        
+        if ($("#cell7, #cell8, #cell9").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell7, #cell8, #cell9").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell7, #cell8, #cell9").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell7, #cell8, #cell9").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell1, #cell4, #cell7").text() == "XXX" || $("#cell1, #cell4, #cell7").text() == "OOO") {  
+        $("#cell1, #cell4, #cell7").css("background", "green");
+         
+        status(); 
+         
+        if ($("#cell1, #cell4, #cell7").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell1, #cell4, #cell7").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell1, #cell4, #cell7").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell1, #cell4, #cell7").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell2, #cell5, #cell8").text() == "XXX" || $("#cell2, #cell5, #cell8").text() == "OOO") {
+        $("#cell2, #cell5, #cell8").css("background", "green");
+        
+        status(); 
+         
+        if ($("#cell2, #cell5, #cell8").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell2, #cell5, #cell8").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell2, #cell5, #cell8").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell2, #cell5, #cell8").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell3, #cell6, #cell9").text() == "XXX" ||$("#cell3, #cell6, #cell9").text() == "OOO") {
+        $("#cell3, #cell6, #cell9").css("background", "green");
+        
+        status(); 
+         
+        if ($("#cell3, #cell6, #cell9").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell3, #cell6, #cell9").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell3, #cell6, #cell9").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell3, #cell6, #cell9").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell1, #cell5, #cell9").text() == "XXX" || $("#cell1, #cell5, #cell9").text() == "OOO") {
+        $("#cell1, #cell5, #cell9").css("background", "green");
+         
+        status(); 
+         
+        if ($("#cell1, #cell5, #cell9").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell1, #cell5, #cell9").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell1, #cell5, #cell9").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell1, #cell5, #cell9").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+         
+       } else if ($("#cell3, #cell5, #cell7").text() == "XXX" || $("#cell3, #cell5, #cell7").text() == "OOO") {
+        $("#cell3, #cell5, #cell7").css("background", "green");
+        
+        status(); 
+         
+        if ($("#cell3, #cell5, #cell7").text() == "XXX" && $("#x").is(":checked")){
+          alert("X wins!");   
+        } else if($("#cell3, #cell5, #cell7").text() == "XXX" && $("#o").is(":checked")) {
+          alert("X wins!");
+        } else if($("#cell3, #cell5, #cell7").text() == "OOO" && $("#x").is(":checked")) {
+          alert("O wins!");
+        } else if($("#cell3, #cell5, #cell7").text() == "OOO" && $("#o").is(":checked")) {
+          alert("O wins!");
+        }
+         
+        setTimeout(clear, 1000);
+          
+        } else if (cellArray.length === 0) {
+         alert("Draw! Please try again.");
+         setTimeout(clear, 1000);
+        }
+      
+      conditionArray.push("false"); 
+     } 
+          
+     function computerMove() {
+       
+        if ($("#x").is(":checked")){ 
+           if ($("#cell1").text() == "O" && $("#cell2").text() == "O") {
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+             cellArray.splice(cellArray.indexOf("3"), 1);  
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell3").text() == "O"){
+            if ($("#cell2").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("2")]).text("O");
+             cellArray.splice(cellArray.indexOf("2"), 1);  
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell3").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+             cellArray.splice(cellArray.indexOf("1"), 1);  
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell4").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell6").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("6")]).text("O");
+             cellArray.splice(cellArray.indexOf("6"), 1);
+             checkUp(); 
+             return;    
+            } 
+           }
+           if ($("#cell4").text() == "O" && $("#cell6").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+             cellArray.splice(cellArray.indexOf("5"), 1); 
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell6").text() == "O"){
+            if ($("#cell4").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("4")]).text("O");
+             cellArray.splice(cellArray.indexOf("4"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell7").text() == "O" && $("#cell8").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell7").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell8").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("8")]).text("O");
+             cellArray.splice(cellArray.indexOf("8"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell8").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+             cellArray.splice(cellArray.indexOf("7"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell4").text() == "O") {
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+             cellArray.splice(cellArray.indexOf("7"), 1); 
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell4").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("4")]).text("O");
+             cellArray.splice(cellArray.indexOf("4"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell4").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+             cellArray.splice(cellArray.indexOf("1"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell8").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("8")]).text("O");
+             cellArray.splice(cellArray.indexOf("8"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell8").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+             cellArray.splice(cellArray.indexOf("5"), 1); 
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell8").text() == "O"){
+            if ($("#cell2").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("2")]).text("O");
+             cellArray.splice(cellArray.indexOf("2"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell6").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell6").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("6")]).text("O");
+             cellArray.splice(cellArray.indexOf("6"), 1); 
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell6").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+             cellArray.splice(cellArray.indexOf("3"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+             cellArray.splice(cellArray.indexOf("1"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+             cellArray.splice(cellArray.indexOf("7"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+             cellArray.splice(cellArray.indexOf("3"), 1); 
+             checkUp(); 
+             return;  
+            }  
+           }
+             
+          if ($("#cell1").text() == "X" && $("#cell2").text() == "X") {
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+            cellArray.splice(cellArray.indexOf("3"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell3").text() == "X"){
+           if ($("#cell2").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("2")]).text("O");
+            cellArray.splice(cellArray.indexOf("2"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell2").text() == "X" && $("#cell3").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+            cellArray.splice(cellArray.indexOf("1"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell6").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("6")]).text("O");
+            cellArray.splice(cellArray.indexOf("6"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell6").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell5").text() == "X" && $("#cell6").text() == "X"){
+           if ($("#cell4").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("4")]).text("O");
+            cellArray.splice(cellArray.indexOf("4"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell7").text() == "X" && $("#cell8").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+            cellArray.splice(cellArray.indexOf("9"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell7").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell8").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("8")]).text("O");
+            cellArray.splice(cellArray.indexOf("8"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell8").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+            cellArray.splice(cellArray.indexOf("7"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell1").text() == "X" && $("#cell4").text() == "X") {
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+            cellArray.splice(cellArray.indexOf("7"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell1").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell4").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("4")]).text("O");
+            cellArray.splice(cellArray.indexOf("4"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+            cellArray.splice(cellArray.indexOf("1"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell2").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell8").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("8")]).text("O");
+            cellArray.splice(cellArray.indexOf("8"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell2").text() == "X" && $("#cell8").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell5").text() == "X" && $("#cell8").text() == "X"){
+           if ($("#cell2").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("2")]).text("O");
+            cellArray.splice(cellArray.indexOf("2"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell3").text() == "X" && $("#cell6").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+            cellArray.splice(cellArray.indexOf("9"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell6").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("6")]).text("O");
+            cellArray.splice(cellArray.indexOf("6"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell6").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+            cellArray.splice(cellArray.indexOf("3"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("O");
+            cellArray.splice(cellArray.indexOf("9"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell5").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("O");
+            cellArray.splice(cellArray.indexOf("1"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("O");
+            cellArray.splice(cellArray.indexOf("7"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell5").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("O");
+            cellArray.splice(cellArray.indexOf("3"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          
+          if ($("#cell1").text() == "X" || $("#cell3").text() == "X" || $("#cell7").text() == "X" || $("#cell9").text() == "X") {
+           if ($("#cell5").is(":empty")){
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("O");
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          
+          if (cellArray.length < 9) {
+           var randArrNum = Math.floor(Math.random() * cellArray.length);
+           if ($("#cell" + cellArray[randArrNum]).is(":empty")) {
+            $("#cell" + cellArray[randArrNum]).text("O");
+            cellArray.splice(cellArray.indexOf(cellArray[randArrNum]), 1);
+            checkUp(); 
+            return;  
+           }  
+          }
+          
+         } else {
+             
+          if ($("#cell1").text() == "X" && $("#cell2").text() == "X") {
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("3"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell3").text() == "X"){
+           if ($("#cell2").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("2")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("2"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell2").text() == "X" && $("#cell3").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("1"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell6").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("6")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("6"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell6").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell5").text() == "X" && $("#cell6").text() == "X"){
+           if ($("#cell4").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("4")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("4"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell7").text() == "X" && $("#cell8").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("9"), 1);   
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell7").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell8").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("8")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("8"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell8").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("7"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell1").text() == "X" && $("#cell4").text() == "X") {
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("7"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell1").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell4").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("4")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("4"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell4").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("1"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          }
+          if ($("#cell2").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell8").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("8")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("8"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell2").text() == "X" && $("#cell8").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell5").text() == "X" && $("#cell8").text() == "X"){
+           if ($("#cell2").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("2")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("2"), 1);  
+            checkUp(); 
+            return;  
+           } 
+          } 
+          if ($("#cell3").text() == "X" && $("#cell6").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("9"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell6").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("6")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("6"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell6").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("3"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell9").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("9")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("9"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell5").text() == "X" && $("#cell9").text() == "X"){
+           if ($("#cell1").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("1")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("1"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell5").text() == "X") {
+           if ($("#cell7").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("7")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("7"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell3").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell5").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell5").text() == "X" && $("#cell7").text() == "X"){
+           if ($("#cell3").text().length == 0) {
+            $('#cell' + cellArray[cellArray.indexOf("3")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("3"), 1); 
+            checkUp(); 
+            return;  
+           } 
+          }  
+          if ($("#cell1").text() == "X" || $("#cell3").text() == "X" || $("#cell7").text() == "X" || $("#cell9").text() == "X") {
+           if ($("#cell5").is(":empty")){
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+          
+           
+           if ($("#cell1").text() == "O" && $("#cell2").text() == "O") {
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("X");
+             cellArray.splice(cellArray.indexOf("3"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell3").text() == "O"){
+            if ($("#cell2").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("2")]).text("X");
+             cellArray.splice(cellArray.indexOf("2"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell3").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("X");
+             cellArray.splice(cellArray.indexOf("1"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell4").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell6").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("6")]).text("X");
+             cellArray.splice(cellArray.indexOf("6"), 1);
+             checkUp(); 
+             return;    
+            } 
+           }
+           if ($("#cell4").text() == "O" && $("#cell6").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("X");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell6").text() == "O"){
+            if ($("#cell4").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("4")]).text("X");
+             cellArray.splice(cellArray.indexOf("4"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell7").text() == "O" && $("#cell8").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("X");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell7").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell8").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("8")]).text("X");
+             cellArray.splice(cellArray.indexOf("8"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell8").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("X");
+             cellArray.splice(cellArray.indexOf("7"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell4").text() == "O") {
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("X");
+             cellArray.splice(cellArray.indexOf("7"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell4").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("4")]).text("X");
+             cellArray.splice(cellArray.indexOf("4"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell4").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("X");
+             cellArray.splice(cellArray.indexOf("1"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell8").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("8")]).text("X");
+             cellArray.splice(cellArray.indexOf("8"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell2").text() == "O" && $("#cell8").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("X");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell8").text() == "O"){
+            if ($("#cell2").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("2")]).text("X");
+             cellArray.splice(cellArray.indexOf("2"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell6").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("X");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell6").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("6")]).text("X");
+             cellArray.splice(cellArray.indexOf("6"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell6").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("X");
+             cellArray.splice(cellArray.indexOf("3"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell9").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("9")]).text("X");
+             cellArray.splice(cellArray.indexOf("9"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell1").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("X");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell9").text() == "O"){
+            if ($("#cell1").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("1")]).text("X");
+             cellArray.splice(cellArray.indexOf("1"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell5").text() == "O") {
+            if ($("#cell7").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("7")]).text("X");
+             cellArray.splice(cellArray.indexOf("7"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell3").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell5").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("5")]).text("X");
+             cellArray.splice(cellArray.indexOf("5"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           if ($("#cell5").text() == "O" && $("#cell7").text() == "O"){
+            if ($("#cell3").text().length == 0) {
+             $('#cell' + cellArray[cellArray.indexOf("3")]).text("X");
+             cellArray.splice(cellArray.indexOf("3"), 1);
+             checkUp(); 
+             return;  
+            }  
+           }
+           
+           if ($("#cell1").text() == "O" || $("#cell3").text() == "O" || $("#cell7").text() == "O" || $("#cell9").text() == "O") {
+           if ($("#cell5").is(":empty")){
+            $('#cell' + cellArray[cellArray.indexOf("5")]).text("X"); 
+            cellArray.splice(cellArray.indexOf("5"), 1);
+            checkUp(); 
+            return;  
+           } 
+          } 
+           
+           if (cellArray.length < 9) {
+           var randArrNum = Math.floor(Math.random() * cellArray.length);
+           if ($("#cell" + cellArray[randArrNum]).is(":empty")) {
+            $("#cell" + cellArray[randArrNum]).text("X");
+            cellArray.splice(cellArray.indexOf(cellArray[randArrNum]), 1);
+            checkUp(); 
+            return;  
+           }  
+          }     
+         }
+        checkUp(); 
+        }    
+    });
+    
+  
+    </script>
+    </body>
+  
+
+
+  <!-- footer start -->
+  <footer>
+    <div class="footer-container">
+      <!--logo and info column-->
+      <div class="col">
+        <!--logo insert-->
+        <img src="../logo.png" alt="logo" class="footlogo" />
+        <div class="footercontent">
+          <h2 class="footerheading">ZenZone</h2>
+          <p class="footerpara">go stress free</p>
+        </div>
+      </div>
+  
+      <!--ADDRESS COLUMN-->
+  
+      <div class="footer-side-col">
+        <div class="col">
+          <h3>
+            ADDRESS
+            <div class="underline"><span></span></div>
+          </h3>
+          <p><a>Coimbatore, India</a></p>
+          <p class="email-id"><a href="mailto:zenzone119@gmail.com">zenzone119@gmail.com</a></p>
+        </div>
+        <!--HOME COLUMN-->
+        <div class="col">
+          <h3>HOME</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <!-- <li>
+              <a href="">Ranjith R B</a>
+            </li> -->
+            <li>
+              <a>Sri Ramakrishna Engineering College</a>
+            </li>
+            <li>
+              <!-- <a href="">Donate</a> -->
+               <a>Coimbatore</a>
+            </li>
+          </ul>
+        </div>
+        <!--OUR SERVICES COLUMN-->
+       <div class="col">
+          <h3>
+            SERVICES
+            <div class="underline"><span></span></div>
+          </h3> 
+          <ul>
+            <li>
+              <a href="html/audioTherapy.html">Listen Songs</a>
+            </li>
+              <li>
+              <a href="html/readingTherapy.html">Reading Articles</a>
+            </li>
+            <li>
+              <a href="html/yogatherapy.html">Yoga</a>
+            </li>
+            <li>
+              <a href="html/qoutesTherapy.html">Quote Sharing</a>
+            </li>
+            <li>
+              <a href="html/talkingTherapy.html">Mental Assistance</a>
+            </li>
+            <li>
+              <a href="html/childTherapy.html">Play Games</a>
+             </li>
+          </ul>
+        </div> 
+        <!--CONTACTS COLUMN-->
+        <div class="col">
+          <h3>
+            CONTACTS
+            <div class="underline"><span></span></div>
+          </h3>
+          <div class="social-menu">
+            <ul>
+              <a href="https://twitter.com" target="_blank">
+                <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+              </a>
+              <a href="https://github.com" target="_blank">
+                <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="childTherapy.js"></script>
+</body>
+
+</html>

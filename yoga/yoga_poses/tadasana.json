@@ -1,0 +1,15 @@
+{
+    "name": "Tadasana (Mountain Pose)",
+    "required_landmarks": [
+        "LEFT_SHOULDER",
+        "RIGHT_SHOULDER",
+        "LEFT_HIP",
+        "RIGHT_HIP",
+        "LEFT_ANKLE",
+        "RIGHT_ANKLE"
+    ],
+    "angle_ranges": {
+        "shoulders": [170, 190],
+        "hips": [170, 190]
+    }
+}

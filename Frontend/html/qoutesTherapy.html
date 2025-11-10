@@ -1,0 +1,2583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../logo.png">
+    <title>ZenZone - Inspire Hub</title>
+    <link rel="stylesheet" href="css/laugh.css" />
+    <link
+      rel="stylesheet"
+      text="text/CSS"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body onload="myfunction()" id="main">
+    <div id="load">
+      <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+    </div>
+    <div id="back-top-div" class="back-top-wrap">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    
+  
+    <!-- <nav>
+      <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
+      </div>
+    </nav> -->
+    <nav class="nav-bar">
+      <ul class="nav-bar-menu">
+        <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo"/></a>
+        <li class="nav-bar-btn" id="nav-bar-books"><span class="nav-bar-btn-span" id="nav-bar-btn-books" style="color: #000000;">Books</span></li>
+        <li class="nav-bar-btn" id="nav-bar-startups"><span class="nav-bar-btn-span" id="nav-bar-btn-startups" style="color: #000000;">Startups</span></li>
+        <li class="nav-bar-btn" id="nav-bar-relationships"><span class="nav-bar-btn-span" id="nav-bar-btn-relationships" style="color: #000000;">Relationships</span></li>
+        <li class="nav-bar-btn" id="nav-bar-sports"><span class="nav-bar-btn-span" id="nav-bar-btn-sports" style="color: #000000;">Sports</span></li>
+        <li class="nav-bar-btn" id="nav-bar-movies"><span class="nav-bar-btn-span" id="nav-bar-btn-movies" style="color: #000000;">Movies</span></li>
+        <li class="nav-bar-btn" id="nav-bar-african"><span class="nav-bar-btn-span" id="nav-bar-btn-african" style="color: #000000;">Thoughts</span></li>
+        <li class="nav-bar-btn" id="nav-bar-life"><span class="nav-bar-btn-span" id="nav-bar-btn-life" style="color: #000000;">Life</span></li>
+      </ul>
+    </nav>
+  
+    <div class="menu" id="menu">
+      <ul class="menu-link">
+        <li><a  href="../index.html">HOME</a></li>
+        <!-- <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
+        <li><a onclick="closeMenu()" href="#memes">MEMES </a></li>
+        <li><a  onclick="closeMenu()" href="#standups">STANDUPS </a></li> -->
+      </ul>
+    </div>
+    
+    <!-- <header>
+      <div class="filter"></div>
+      <div class="center"> 
+        <h1  data-aos="fade-down"  id="title">Welcome to Our <br><span class="heading-span">Laughing Therapy</span></h1>
+        <h3 data-aos="fade-up-right" data-aos-duration="1500" id="subtitle">Read some memes and <br>enjoy watching standup to gain some happiness and relief <br> from your problems.</h3>
+      </div>
+    </header> -->
+
+    <html>
+<head>
+	<!-- <title>Quote Machine</title> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link href='https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href={{ url_for("static", filename = "css/bootstrap.css") }} />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href={{ url_for("static", filename = "css/font-awesome.min.css" )}} rel="stylesheet" />
+
+  <!-- Custom s tyles for this template -->
+  <link href={{ url_for("static", filename = "css/style.css" )}} rel="stylesheet" />
+  <!-- responsive style -->
+  <link href={{ url_for("static", filename = "css/responsive.css" )}}  rel="stylesheet" />
+
+	<style>
+
+		html {
+		  font-family: sans-serif;
+		  -ms-text-size-adjust: 100%;
+		  -webkit-text-size-adjust: 100%; }
+		
+		body {
+		  margin: 0;
+		   }
+		
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		main,
+		menu,
+		nav,
+		section,
+		summary {
+		  display: block; }
+		
+		audio,
+		canvas,
+		progress,
+		video {
+		  display: inline-block;
+		  vertical-align: baseline; }
+		
+		audio:not([controls]) {
+		  display: none;
+		  height: 0; }
+		
+		[hidden],
+		template {
+		  display: none; }
+		
+		a {
+		  background-color: transparent; }
+		
+		a:active {
+		  outline: 0; }
+		a:hover {
+		  outline: 0; }
+		
+		abbr[title] {
+		  border-bottom: 1px dotted; }
+		
+		b,
+		strong {
+		  font-weight: bold; }
+		
+		dfn {
+		  font-style: italic; }
+		
+		h1 {
+		  font-size: 2em;
+		  margin: 0.67em 0; }
+		
+		mark {
+		  background: #ff0;
+		  color: #000; }
+		
+		small {
+		  font-size: 80%; }
+		
+		sub,
+		sup {
+		  font-size: 75%;
+		  line-height: 0;
+		  position: relative;
+		  vertical-align: baseline; }
+		
+		sup {
+		  top: -0.5em; }
+		
+		sub {
+		  bottom: -0.25em; }
+		
+		img {
+		  border: 0; }
+		
+		svg:not(:root) {
+		  overflow: hidden; }
+		
+		figure {
+		  margin: 1em 40px; }
+		
+		hr {
+		  box-sizing: content-box;
+		  height: 0; }
+		
+		pre {
+		  overflow: auto; }
+		
+		code,
+		kbd,
+		pre,
+		samp {
+		  font-family: monospace, monospace;
+		  font-size: 1em; }
+		
+		button,
+		input,
+		optgroup,
+		select,
+		textarea {
+		  color: inherit;
+		  font: inherit;
+		  margin: 0; }
+		
+		button {
+		  overflow: visible; }
+		
+		button,
+		select {
+		  text-transform: none; }
+		
+		button,
+		html input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+		  -webkit-appearance: button;
+		  cursor: pointer; }
+		
+		button[disabled],
+		html input[disabled] {
+		  cursor: default; }
+		
+		button::-moz-focus-inner,
+		input::-moz-focus-inner {
+		  border: 0;
+		  padding: 0; }
+		
+		input {
+		  line-height: normal; }
+		
+		input[type="checkbox"],
+		input[type="radio"] {
+		  box-sizing: border-box;
+		  padding: 0; }
+		
+		input[type="number"]::-webkit-inner-spin-button,
+		input[type="number"]::-webkit-outer-spin-button {
+		  height: auto; }
+		
+		input[type="search"] {
+		  -webkit-appearance: textfield;
+		  box-sizing: content-box; }
+		
+		input[type="search"]::-webkit-search-cancel-button,
+		input[type="search"]::-webkit-search-decoration {
+		  -webkit-appearance: none; }
+		
+		fieldset {
+		  border: 1px solid #c0c0c0;
+		  margin: 0 2px;
+		  padding: 0.35em 0.625em 0.75em; }
+		
+		legend {
+		  border: 0;
+		  padding: 0; }
+		
+		textarea {
+		  overflow: auto; }
+		.footer-social { 
+			display: block;
+			text-align: center;
+			background-color: red;
+			height: 35vh;
+		
+		}
+		
+		optgroup {
+		  font-weight: bold; }
+		
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0; }
+		
+		td,
+		th {
+		  padding: 0; }
+		
+		
+		html {
+		  font-size: 62.5%; }
+		
+		body {
+		  font-size: 1.5em;
+		  line-height: 1.6;
+		  font-weight: 400;
+		  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  color: #222; }
+		
+		a {
+		  color: #1eaedb; }
+		  a:hover {
+			color: #1b9cc5; }
+		
+		hr {
+		  margin-top: 3rem;
+		  margin-bottom: 3.5rem;
+		  border-width: 0;
+		  border-top: 1px solid #e1e1e1; }
+		
+		.u-full-width {
+		  width: 100%;
+		  box-sizing: border-box; }
+		
+		.u-max-full-width {
+		  max-width: 100%;
+		  box-sizing: border-box; }
+		
+		.u-pull-right {
+		  float: right; }
+		
+		.u-pull-left {
+		  float: left; }
+		
+		h1, h2, h3, h4, h5, h6 {
+		  margin-top: 0;
+		  margin-bottom: 2rem;
+		  font-weight: 300; }
+		
+		h1 {
+		  font-size: 4.0rem;
+		  line-height: 1.2;
+		  letter-spacing: -.1rem; }
+		
+		h2 {
+		  font-size: 3.6rem;
+		  line-height: 1.25;
+		  letter-spacing: -.1rem; }
+		
+		h3 {
+		  font-size: 3.0rem;
+		  line-height: 1.3;
+		  letter-spacing: -.1rem; }
+		
+		h4 {
+		  font-size: 2.4rem;
+		  line-height: 1.35;
+		  letter-spacing: -.08rem; }
+		
+		h5 {
+		  font-size: 1.8rem;
+		  line-height: 1.5;
+		  letter-spacing: -.05rem; }
+		
+		h6 {
+		  font-size: 1.5rem;
+		  line-height: 1.6;
+		  letter-spacing: 0; }
+		
+		@media (min-width: 550px) {
+		  h1 {
+			font-size: 5.0rem; }
+		
+		  h2 {
+			font-size: 4.2rem; }
+		
+		  h3 {
+			font-size: 3.6rem; }
+		
+		  h4 {
+			font-size: 3.0rem; }
+		
+		  h5 {
+			font-size: 2.4rem; }
+		
+		  h6 {
+			font-size: 1.5rem; } }
+		p {
+		  margin-top: 0; }
+		
+		
+		.container {
+		  position: relative;
+		  width: 100%;
+		  max-width: 1080px;
+		  margin: 0 auto;
+		  padding: 0 20px;
+		  box-sizing: border-box; }
+		
+		.column,
+		.columns {
+		  width: 100%;
+		  float: left;
+		  box-sizing: border-box; }
+		
+		@media (min-width: 400px) {
+		  .container {
+			width: 85%;
+			padding: 0; } }
+		@media (min-width: 550px) {
+		  .container {
+			width: 80%; }
+		
+		  .column,
+		  .columns {
+			margin-left: 4%; }
+		
+		  .column:first-child,
+		  .columns:first-child {
+			margin-left: 0; }
+		
+		  .one.column,
+		  .one.columns {
+			width: 4.66667%; }
+		
+		  .two.columns {
+			width: 13.33333%; }
+		
+		  .three.columns {
+			width: 22%; }
+		
+		  .four.columns {
+			width: 30.66667%; }
+		
+		  .five.columns {
+			width: 39.33333%; }
+		
+		  .six.columns {
+			width: 48%; }
+		
+		  .seven.columns {
+			width: 56.66667%; }
+		
+		  .eight.columns {
+			width: 65.33333%; }
+		
+		  .nine.columns {
+			width: 74%; }
+		
+		  .ten.columns {
+			width: 82.66667%; }
+		
+		  .eleven.columns {
+			width: 91.33333%; }
+		
+		  .twelve.columns {
+			width: 100%;
+			margin-left: 0; }
+		
+		  .one-third.column {
+			width: 30.66667%; }
+		
+		  .two-thirds.column {
+			width: 65.33333%; }
+		
+		  .one-half.column {
+			width: 48%; }
+		
+		  .offset-by-one.column,
+		  .offset-by-one.columns {
+			margin-left: 8.66667%; }
+		
+		  .offset-by-two.column,
+		  .offset-by-two.columns {
+			margin-left: 17.33333%; }
+		
+		  .offset-by-three.column,
+		  .offset-by-three.columns {
+			margin-left: 26%; }
+		
+		  .offset-by-four.column,
+		  .offset-by-four.columns {
+			margin-left: 34.66667%; }
+		
+		  .offset-by-five.column,
+		  .offset-by-five.columns {
+			margin-left: 43.33333%; }
+		
+		  .offset-by-six.column,
+		  .offset-by-six.columns {
+			margin-left: 52%; }
+		
+		  .offset-by-seven.column,
+		  .offset-by-seven.columns {
+			margin-left: 60.66667%; }
+		
+		  .offset-by-eight.column,
+		  .offset-by-eight.columns {
+			margin-left: 69.33333%; }
+		
+		  .offset-by-nine.column,
+		  .offset-by-nine.columns {
+			margin-left: 78%; }
+		
+		  .offset-by-ten.column,
+		  .offset-by-ten.columns {
+			margin-left: 86.66667%; }
+		
+		  .offset-by-eleven.column,
+		  .offset-by-eleven.columns {
+			margin-left: 95.33333%; }
+		
+		  .offset-by-one-third.column,
+		  .offset-by-one-third.columns {
+			margin-left: 34.66667%; }
+		
+		  .offset-by-two-thirds.column,
+		  .offset-by-two-thirds.columns {
+			margin-left: 69.33333%; }
+		
+		  .offset-by-one-half.column,
+		  .offset-by-one-half.column {
+			margin-left: 52%; } }
+		.container:after,
+		.row:after,
+		.u-cf {
+		  content: "";
+		  display: table;
+		  clear: both; }
+		
+		.button,
+		button {
+		  display: inline-block;
+		  height: 38px;
+		  padding: 0 30px;
+		  color: #555555;
+		  text-align: center;
+		  font-size: 11px;
+		  font-weight: 600;
+		  line-height: 38px;
+		  letter-spacing: .1rem;
+		  text-transform: uppercase;
+		  text-decoration: none;
+		  white-space: nowrap;
+		  background-color: transparent;
+		  border-radius: 4px;
+		  border: 1px solid #bbb;
+		  cursor: pointer;
+		  box-sizing: border-box; }
+		
+		input[type="submit"], input[type="reset"], input[type="button"] {
+		  display: inline-block;
+		  height: 38px;
+		  padding: 0 30px;
+		  color: #555555;
+		  text-align: center;
+		  font-size: 11px;
+		  font-weight: 600;
+		  line-height: 38px;
+		  letter-spacing: .1rem;
+		  text-transform: uppercase;
+		  text-decoration: none;
+		  white-space: nowrap;
+		  background-color: transparent;
+		  border-radius: 4px;
+		  border: 1px solid #bbb;
+		  cursor: pointer;
+		  box-sizing: border-box; }
+		
+		.button:hover,
+		button:hover {
+		  color: #333;
+		  border-color: #888888;
+		  outline: 0; }
+		
+		input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+		  color: #333;
+		  border-color: #888888;
+		  outline: 0; }
+		
+		.button:focus,
+		button:focus {
+		  color: #333;
+		  border-color: #888888;
+		  outline: 0; }
+		
+		input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+		  color: #333;
+		  border-color: #888888;
+		  outline: 0; }
+		
+		.button.button-primary,
+		button.button-primary {
+		  color: #fff;
+		  background-color: #33c3f0;
+		  border-color: #33c3f0; }
+		
+		input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+		  color: #fff;
+		  background-color: #33c3f0;
+		  border-color: #33c3f0; }
+		
+		.button.button-primary:hover,
+		button.button-primary:hover {
+		  color: #fff;
+		  background-color: #1eaedb;
+		  border-color: #1eaedb; }
+		
+		input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
+		  color: #fff;
+		  background-color: #1eaedb;
+		  border-color: #1eaedb; }
+		
+		.button.button-primary:focus,
+		button.button-primary:focus {
+		  color: #fff;
+		  background-color: #1eaedb;
+		  border-color: #1eaedb; }
+		
+		input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+		  color: #fff;
+		  background-color: #1eaedb;
+		  border-color: #1eaedb; }
+		input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+		  height: 38px;
+		  padding: 6px 10px;
+		  background-color: #fff;
+		  border: 1px solid #d1d1d1;
+		  border-radius: 4px;
+		  box-shadow: none;
+		  box-sizing: border-box; }
+		
+		textarea,
+		select {
+		  height: 38px;
+		  padding: 6px 10px;
+		  background-color: #fff;
+		  border: 1px solid #d1d1d1;
+		  border-radius: 4px;
+		  box-shadow: none;
+		  box-sizing: border-box; }
+		
+		input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+		  -webkit-appearance: none;
+		  -moz-appearance: none;
+		  appearance: none; }
+		
+		textarea {
+		  -webkit-appearance: none;
+		  -moz-appearance: none;
+		  appearance: none;
+		  min-height: 65px;
+		  padding-top: 6px;
+		  padding-bottom: 6px; }
+		
+		input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
+		  border: 1px solid #33c3f0;
+		  outline: 0; }
+		
+		textarea:focus,
+		select:focus {
+		  border: 1px solid #33c3f0;
+		  outline: 0; }
+		
+		label,
+		legend {
+		  display: block;
+		  margin-bottom: .5rem;
+		  font-weight: 600; }
+		
+		fieldset {
+		  padding: 0;
+		  border-width: 0; }
+		
+		input[type="checkbox"], input[type="radio"] {
+		  display: inline; }
+		
+		label > .label-body {
+		  display: inline-block;
+		  margin-left: .5rem;
+		  font-weight: normal; }
+		
+		ul {
+		  list-style: circle inside; }
+		
+		ol {
+		  list-style: decimal inside;
+		  padding-left: 0;
+		  margin-top: 0; }
+		
+		ul {
+		  padding-left: 0;
+		  margin-top: 0; }
+		  ul ul, ul ol {
+			margin: 1.5rem 0 1.5rem 3rem;
+			font-size: 90%; }
+		
+		ol ol, ol ul {
+		  margin: 1.5rem 0 1.5rem 3rem;
+		  font-size: 90%; }
+		
+		li {
+		  margin-bottom: 1rem; }
+		
+		code {
+		  padding: .2rem .5rem;
+		  margin: 0 .2rem;
+		  font-size: 90%;
+		  white-space: nowrap;
+		  background: #f1f1f1;
+		  border: 1px solid #e1e1e1;
+		  border-radius: 4px; }
+		
+		pre > code {
+		  display: block;
+		  padding: 1rem 1.5rem;
+		  white-space: pre; }
+		
+		th,
+		td {
+		  padding: 12px 15px;
+		  text-align: left;
+		  border-bottom: 1px solid #e1e1e1; }
+		
+		th:first-child,
+		td:first-child {
+		  padding-left: 0; }
+		
+		th:last-child,
+		td:last-child {
+		  padding-right: 0; }
+		
+		button,
+		.button {
+		  margin-bottom: 1rem; }
+		
+		input,
+		textarea,
+		select,
+		fieldset {
+		  margin-bottom: 1.5rem; }
+		
+		pre,
+		blockquote,
+		dl,
+		figure,
+		table,
+		p,
+		ul,
+		ol,
+		form {
+		  margin-bottom: 2.5rem; }
+		
+		body {
+		  background-color: #dcdde0; }
+		
+		.home {
+		  margin: 25px auto 0; }
+		
+		@media screen and (min-width: 1200px) {
+		  #page {
+			height: 100vh; } }
+		.hidden {
+		  display: none; }
+		
+		a {
+		  text-decoration: none; }
+		
+		.headline {
+		  font-family: 'Love Ya Like A Sister', cursive;
+		  font-size: 5em;
+		  text-align: center; }
+		
+		.intro {
+		  font-size: 1.2em; }
+		
+		.navigation {
+		  background-color: #fff; }
+		
+		.nav-bar {
+		  margin: 1.2em 0 0; }
+		
+		.nav-bar-menu {
+		  list-style-type: none;
+		  margin-bottom: 5px;
+		  text-align: center; }
+		
+		.nav-bar-btn {
+		  display: inline-block; }
+		
+		.nav-bar-btn span {
+		  padding: 0.5em 1.3em;
+		  text-decoration: none;
+		  cursor: pointer;
+		  color: #757575;
+		  font-weight: 700;
+		  font-size: 14px; }
+		
+		.nav-bar-btn span:hover {
+		  color: black; }
+		
+		.black-bottom-border {
+		  border-bottom: 4px solid #333; }
+		
+		.nav-active {
+		  border-bottom: 4px solid #333; }
+		
+		.grid-cell {
+		  height: 170px;
+		  box-sizing: border-box;
+		  box-shadow: 4px 4px 5px #ccc; }
+		
+		.title h4 {
+		  font-size: 1.5em;
+		  text-align: center;
+		  margin: 10px 10px;
+		  padding-bottom: 5px;
+		  cursor: pointer;
+		  color: #757575; }
+		
+		h4:hover {
+		  background-color: rgba(158, 158, 158, 0.2); }
+		
+		#row-2 {
+		  margin-top: 2em; }
+		
+		.featured-image {
+		  height: 100px; }
+		
+		  .featured-image-books {
+  background: url("../images/books.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-relationships {
+  background: url("../images/relationship.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-sports {
+  background: url("../images/sports.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-life {
+  background: url("../images/Life.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-movies {
+  background: url("../images/movies.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-startups {
+  background: url("../images/startup.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-african {
+  background: url("../images/african.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+.featured-image-christianity {
+  background: url("../images/christianity.jpg") top center no-repeat;
+  background-size: 110%;
+  transition: background 800ms ease-in-out;
+}
+
+
+		
+		.featured-image:hover {
+		  background-size: 100%; }
+		
+		.grid-cell a {
+		  color: #333; }
+		
+		.three.columns {
+		  background-color: #fff; }
+		
+		@media screen and (max-width: 549px) {
+		  .grid-cell {
+			margin-top: 2em; }
+		
+		  .title h4 {
+			font-size: 2em; } }
+		@media (min-width: 549px) and (max-width: 750px) {
+		  .title h4 {
+			font-size: 1.1em; } }
+		@media screen and (min-width: 1200px) {
+		  .title h4 {
+			padding-top: 10px; } }
+		#copyright-info {
+		  margin-top: 2em;
+		  text-align: center; }
+		
+		.background-style-sports {
+		  background: url("http://i.imgur.com/SWyj4km.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-relationships {
+		  background: url("http://i.imgur.com/SaQWOfT.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-movies {
+		  background: url("http://i.imgur.com/S2Y76I0.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-african {
+		  background: url("http://i.imgur.com/d42jTmL.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-startups {
+		  background: url("http://i.imgur.com/RjzESyg.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-christianity {
+		  background: url("http://i.imgur.com/uGSUQMc.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-books {
+		  background: url("http://i.imgur.com/NIjZwMc.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.background-style-life {
+		  background: url("https://wallpaperaccess.com/full/4952576.jpg") top center no-repeat;
+		  background-size: cover;
+		  width: 100%;
+		  -webkit-transition-property: background;
+		  -moz-transition-property: background;
+		  -o-transition-property: background;
+		  transition-property: background;
+		  -webkit-transition-duration: 500ms;
+		  -moz-transition-duration: 500ms;
+		  -o-transition-duration: 500ms;
+		  transition-duration: 500ms;
+		  overflow: hidden; }
+		
+		.quotesBox {
+		  margin-top: 3em;
+		  box-shadow: #555555;
+		  background-color:rgba(176, 168, 168, 0.5);}
+		
+		blockquote {
+		  position: relative;
+		  margin-top: 2em;
+		  padding: 30px 60px 70px;
+		  text-align: center;
+		  font-size: 2em;
+		  font-family: 'Shadows Into Light Two', cursive; }
+		
+		blockquote::before, blockquote::after {
+		  position: absolute;
+		  width: 60px;
+		  height: 60px;
+		  font-size: 120px;
+		  line-height: 1; }
+		
+		blockquote::before {
+		  top: 0;
+		  left: 0;
+		  content: "\201C"; }
+		
+		blockquote::after {
+		  top: 0;
+		  right: 0;
+		  content: "\201D"; }
+		
+		.author {
+		  position: absolute;
+		  clear: both;
+		  float: right;
+		  bottom: 0;
+		  right: 0;
+		  color: #757575;
+		  font-size: 0.7em; }
+		
+		@media screen and (max-width: 850px) {
+		  blockquote::before, blockquote::after {
+			font-size: 2em;
+			width: 30px;
+			height: 30px; }
+		
+		  blockquote {
+			padding: 10px 30px 70px; } }
+		@media screen and (min-width: 800px) {
+		  .quotesBox {
+			height: 350px; } }
+		.cta {
+		  text-align: center;
+		  margin: 3em auto 0; }
+		
+		.btn {
+		  margin-left: 15px;
+		  color: #fff;
+		  box-shadow: 5px 5px 5px transparent; }
+		
+		.btn-quote, .btn-quote:focus {
+		  color: #fff;
+		  background-color: #333; }
+		
+		.btn-quote:hover {
+		  color: #fff;
+		  background-color: #4d4d4d; }
+		
+		.btn-tweet {
+		  background-color: #22E9FC;
+		  color: #4d4d4d; }
+		</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>  //Declare global variables
+  
+		var africanQuotes;
+		var bookQuotes; 
+		var sportsQuotes;
+		var startupQuotes;
+		var lifeQuotes;
+		var relationshipQuotes;
+		var christianityQuotes;
+		var movieQuotes;
+	  
+		//Quotes Containers
+		
+		startupQuotes = [ 
+		  {
+			quote: "If you make the Internet, live on the internet.",  
+			author: "Matthew Mullenweg, WordPress"
+		  }, 
+		  
+		  {
+			quote: "Find something you love and do it better than everyone else.",
+			author: "Gurbaksh Chahal, RadiumOne"
+		  },
+	  
+		  {
+			quote: "I find it best to dive right in and learn the hard way.",
+			author: "Pete Cashmore, Mashable"
+		  },
+	  
+		  {
+			quote: "If you do the things that are easier first, then you can actually make a lot of progress.",
+			author: "Mark Zuckerberg, Facebook"
+		  },
+	  
+		  {
+			quote: "A hard thing is done by figuring out how to start.",
+			author: "Rand Fishkin, SEOmoz"
+		  },
+	  
+		  {
+			quote: "To any entrepreneur: if you want to do it, do it now. If you don’t, you’re going to regret it.",
+			author: "Catherine Cook, MyYearbook"
+		  },
+	  
+		  {
+			quote: "Everything started as nothing.",
+			author: "Ben Weissenstein, Grand Slam Garage Sales"
+		  },
+	  
+		  {
+			quote: "I don’t have big ideas. I sometimes have small ideas, which seem to work out.",
+			author: "Matt Mullenweg, WordPress"
+		  },
+	  
+		  {
+			quote: "I think I was very naïve early on, but that also meant I didn’t know what couldn’t be done.",
+			author: "Matt Mickiewicz, 99 Designs"
+		  },
+	  
+		  {
+			quote: "It’s not about how many years of experience you have. It’s about the quality of your years of experience.",
+			author: "Jacob Cass, Logo of the Day"
+		  },
+	  
+		  {
+			quote: "Every single person I know who is successful at what they do is successful because they love doing it.",
+			author: "Joe Penna, Mystery Guitar Man"
+		  },
+	  
+		  {
+			quote: "My number one piece of advice is: you should learn how to program.",
+			author: "Mark Zuckerberg, Facebook"
+		  },
+	  
+		  {
+			quote: "Focusing on one thing and doing it really, really well can get you very far.",
+			author: "Kevin Systrom, Instagram"
+		  },
+	  
+		  {
+			quote: "Success is defined in units of fun. It’s all about being happy.",
+			author: "Jake Nickell, Threadless"
+		  },
+		  {
+			quote: "Solving specific problems is what drives me. I am not interested in having a career. I never have been.",
+			author: "Sean Parker, Napster"
+		  },
+	  
+		  {
+			quote: "I’m here to build something for the long-term. Anything else is a distraction.",
+			author: "Mark Zuckerberg, Facebook"
+		  },
+	  
+		  {
+			quote: "One can get anything if he is willing to help enough others get what they want.",
+			author: "Zig Ziglar, Motivational Speaker"
+		  },
+	  
+		  {
+			quote: "Brilliant thinking is rare, but courage is in even shorter supply than genius.",
+			author: "Peter Thiel, Zero to One"
+		  },
+	  
+		  {
+			quote: "All failed companies are the same: they failed to escape competition.",
+			author: "Peter Thiel, Zero to One"
+		  },
+	  
+		  {
+			quote: "Don't worry about failure; you only have to be right once.",
+			author: "Drew Houston"
+		  },
+	  
+		  {
+			quote: "As long as your going to be thinking anyway, think big.",
+			author: "Donald Trump"
+		  },
+	  
+		  {
+			quote: "Chase the vision, not the money; the money will end up following you.",
+			author: "Tony Hsieh"
+		  },
+	  
+		  {
+			quote: "Always deliver more than expected.",
+			author: "Larry Page, Co-Founder, Google"
+		  },
+	  
+		  {
+			quote: "If you’re not a risk taker, you should get the hell out of business.",
+			author: "Ray Kroc, McDonald’s Founder"
+		  },
+	  
+		  {
+			quote: "Ideas are commodity. Execution of them is not.",
+			author: "Michael Dell, Dell Computers"
+		  },
+	  
+		];
+	  
+		bookQuotes = [
+	  
+		  {
+			quote: "There are five billion people living on this planet. But you fall in love with one particular person, and you won't swap her for any other.",
+			author: "Jostein Gaarder, The Solitaire Mystery"
+		  },
+	  
+		  {
+			quote: "People generally see what they look for and hear what they listen for.",
+			author: "Harper Lee, To Kill a Mockingbird" 
+		  },
+	  
+		  {
+			quote: "You don't get to choose if you get hurt in this world...but you do have some say in who hurts you.",
+			author: "John Green, The Fault In Our Stars"
+		  },
+	  
+		  {
+			quote: "The world is not a wish-granting factory",
+			author: "John Green, The Fault In Our Stars"
+		  },
+	  
+		  {
+			quote: "Destroying things is much easier than making them.",
+			author: "Suzanne Collins, The Hunger Games"
+		  },
+	  
+		  {
+			quote: "To be successful you need friends and to be very successful you need enemies.",
+			author: "Sidney Sheldon, The Other Side of Midnight"
+		  },
+	  
+		  {
+			quote: "Life is like a novel. It's filled with suspense. You have no idea what is going to happen until you turn the page.",
+			author: "Sidney Sheldon"
+		  },
+	  
+		  {
+			quote: "It's much better to do good in a way that no one knows anything about it.",
+			author: "Leo Tolstoy, Anna Karenina"
+		  },
+	  
+		  {
+			quote: "There comes a time when you have to choose between turning the page and closing the book.",
+			author: "Josh Jameson"
+		  },
+	  
+		  {
+			quote: "I think of life as a good book. The further you get into it, the more it begins to make sense.",
+			author: "Harold Kushner"
+		  },
+	  
+		  {
+			quote: "If you only read the books that everyone else is reading, you can only think what everyone else is thinking.",
+			author: "Haruki Murakami"
+		  },
+	  
+		  {
+			quote: "There are many little ways to enlarge your child’s world. Love of books is the best of all.",
+			author: "Jacqueline Kennedy Onassis"
+		  },
+	  
+		  {
+			quote: "Great books help you understand, and they help you feel understood.",
+			author: "John Green"
+		  },
+	  
+		  {
+			quote: "A book is a version of the world. If you do not like it, ignore it or offer your own version in return.",
+			author: "Salman Rushdie"
+		  },
+	  
+		  {
+			quote: "Keep reading books, but remember that a book is only a book, and you should learn to think for yourself.",
+			author: "Maxim Gorky"
+		  },
+	  
+		  {
+			quote: "There are perhaps no days of our childhood we lived so fully as those we spent with a favorite book.",
+			author: "Marcel Proust"
+		  },
+	  
+		  {
+			quote: "A book is the only place in which you can examine a fragile thought without breaking it.",
+			author: "Edward P. Morgan"
+		  },
+	  
+		  {
+			quote: "If one cannot enjoy reading a book over and over again, there is no use in reading it at all.",
+			author: "Oscar Wilde"
+		  },
+	  
+		  {
+			quote: "Read the best books first, or you may not have a chance to read them at all.",
+			author: "Henry David Thoreau"
+		  },
+	  
+		  {
+			quote: "Make it a rule never to give a child a book you would not read yourself.",
+			author: "George Bernard Shaw"
+		  },
+	  
+		  {
+			quote: "I can’t imagine a man really enjoying a book and reading it only once.",
+			author: "C.S. Lewis"
+		  },
+	  
+		  {
+			quote: "One always has a better book in one’s mind than one can manage to get onto paper.",
+			author: "Michael Cunningham"
+		  },
+	  
+		  {
+			quote: "There are worse crimes than burning books. One of them is not reading them.",
+			author: "Joseph Brodsky"
+		  },
+	  
+		  {
+			quote: "You know you’ve read a good book when you turn the last page and feel a little as if you have lost a friend.",
+			author: "Paul Sweeney"
+		  },
+	  
+		  {
+			quote: "A good book has no ending.",
+			author: "R.D. Cumming"
+		  },
+	  
+	  
+		];
+	  
+		africanQuotes = [
+	  
+		  {
+			quote: "The fool speaks, the wise man listens.",
+			author: "Ethiopian proverb"
+		  },
+	  
+		  {
+			quote: "Marriage is like a groundnut; you have to crack it to see what is inside.",
+			author: "Ghanaian proverb"
+		  },
+	  
+		  {
+			quote: "Patience can cook a stone.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "However long the night, the dawn will break.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "He who eats another mans food will have his own food eaten by others.",
+			author: "Swahili proverb"
+		  },
+	  
+		  {
+			quote: "Water is colourless and tasteless but you can live on it longer than eating food.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "If you want to go fast, go alone. If you want to go far, go together.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "A man who makes trouble for others is also making trouble for himself.",
+			author: "Chinua Achebe"
+		  },
+	  
+		  {
+			quote: "If you think you are too small to make a difference, you haven’t spent a night with a mosquito.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Education is the most powerful weapon which you can use to change the world.",
+			author: "Nelson Mandela"
+		  },
+	  
+		  {
+			quote: "If you are filled with pride, then you will have no room for wisdom.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Do not try to fight a lion if you are not one yourself.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "A good thing sells itself, a bad one advertises itself.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "It is better to be loved than feared.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Whether the knife falls on the melon or the melon on the knife, the melon suffers.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Not to know is bad. Not to wish to know is worse.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Ears that do not listen to advice, accompany the head when it is chopped off.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "A happy man marries the girl he loves, but a happier man loves the girl he marries.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "The wise create proverbs for fools to learn, not to repeat.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Brothers love each other when they are equally rich.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "He who earns calamity, eats it with his family.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "When the mouse laughs at the cat, there is a hole nearby",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "Knowledge without wisdom is like water in the sand.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "When brothers fight to the death, a stranger inherits their father’s estate.",
+			author: "African proverb"
+		  },
+	  
+		  {
+			quote: "To get lost is to learn the way.",
+			author: "African proverb"
+		  },
+	  
+	  
+		];
+	  
+		lifeQuotes = [
+	  
+		  {
+			quote: "Don't cry because it's over, smile because it happened.",
+			author: "Dr. Seuss"
+		  },
+	  
+		  {
+			quote: "You only live once, but if you do it right, once is enough.",
+			author: "Mae West"
+		  },
+	  
+		  {
+			quote: "To live is the rarest thing in the world. Most people exist, that is all.",
+			author: "Oscar Wilde"
+		  },
+	  
+		  {
+			quote: "It is better to be hated for what you are than to be loved for what you are not.",
+			author: "Andre Gide"
+		  },
+	  
+		  {
+			quote: "In three words I can sum up everything I've learned about life: it goes on.",
+			author: "Robert Frost"
+		  },
+	  
+		  {
+			quote: "On most days, the biggest thing you can do is a small act of kindness, decency or love.",
+			author: "Cory Booker"
+		  },
+	  
+		  {
+			quote: "In the end, it's not the years in your life that count. It's the life in your years.",
+			author: "Abraham Lincoln"
+		  },
+	  
+		  {
+			quote: "We do not remember days, we remember moments.",
+			author: "Cesare Pavese"
+		  },
+		  
+		  {
+			quote: "Life's most persistent and urgent question is, 'What are you doing for others?'",
+			author: "Martin Luther King, Jr."
+		  },
+	  
+		  {
+			quote: "Life is really simple, but we insist on making it complicated.",
+			author: "Confucius"
+		  },
+	  
+		  {
+			quote: "Beware the barrenness of a busy life.",
+			author: "Socrates"
+		  },
+	  
+		  {
+			quote: "You have enemies? Good. That means you've stood up for something, sometime in your life.",
+			author: "Winston Churchill"
+		  },
+	  
+		  {
+			quote: "Growth is the only evidence of life.",
+			author: "John Henry Newman"
+		  },
+	  
+		  {
+			quote: "Sometimes the questions are complicated and the answers are simple.",
+			author: "Dr. Seuss"
+		  },
+	  
+		  {
+			quote: "Things change. And friends leave. Life doesn't stop for anybody.",
+			author: "Stephen Chbosky"
+		  },
+	  
+		  {
+			quote: "The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.",
+			author: "Mark Twain"
+		  },
+	  
+		  {
+			quote: "We are what we pretend to be, so we must be careful about what we pretend to be.",
+			author: "Kurt Vonnegut"
+		  },
+	  
+		  {
+			quote: "The one you love and the one who loves you are never, ever the same person.",
+			author: "Chuck Palahniuk"
+		  },
+	  
+		  {
+			quote: "If you don't know where you're going, any road'll take you there.",
+			author: "George Harrison"
+		  },
+	  
+		  {
+			quote: "A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.",
+			author: "George Bernard Shaw"
+		  },
+	  
+		  {
+			quote: "The most important thing is to enjoy your life—to be happy—it's all that matters.",
+			author: "Audrey Hepburn"
+		  },
+	  
+		  {
+			quote: "Life is a book and there are a thousand pages I have not yet read.",
+			author: "Cassandra Clare"
+		  },
+	  
+		  {
+			quote: "Nobody realizes that some people expend tremendous energy merely to be normal",
+			author: "Albert Camus"
+		  },
+	  
+		  {
+			quote: "If you love somebody, let them go, for if they return, they were always yours. If they don't, they never were.",
+			author: "Kahlil Gibran"
+		  },
+	  
+		  {
+			quote: "Do I not destroy my enemies when I make them my friends?",
+			author: "Abraham Lincoln"
+		  },
+	  
+	  
+		];
+	  
+		relationshipQuotes = [
+	  
+		  {
+			quote: "When you stop expecting people to be perfect, you can like them for who they are.",
+			author: "Donald Miller"
+		  },
+	  
+		  {
+			quote: "No road is long with good company.",
+			author: "Turkish Proverb"
+		  },
+	  
+		  {
+			quote: "Shared joy is a double joy; shared sorrow is half a sorrow.",
+			author: "Swedish Proverb"
+		  },
+	  
+		  {
+			quote: "We are afraid to care too much, for fear that the other person does not care at all.",
+			author: "Eleanor Roosevelt"
+		  },
+	  
+		  {
+			quote: "Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down.",
+			author: "Oprah Winfrey"
+		  },
+	  
+		  {
+			quote: "What love we’ve given, we’ll have forever. What love we fail to give, will be lost for all eternity",
+			author: "Leo Buscaglia"
+		  },
+	  
+		  {
+			quote: "Life is partly what we make it, and partly what it is made by the friends we choose.",
+			author: "Tennessee Williams"
+		  },
+	  
+		  {
+			quote: "Everything that irritates us about others can lead us to an understanding of ourselves.",
+			author: "Carl Jung"
+		  },
+	  
+		  {
+			quote: "Intimacy is the capacity to be rather weird with someone – and finding that that’s ok with them.",
+			author: "Alain de Botton"
+		  },
+	  
+		  {
+			quote: "An eye for eye only ends up making the whole world blind.",
+			author: "Mahatma Gandhi"
+		  },
+	  
+		  {
+			quote: "What you do not want done to yourself, do not do to others.",
+			author: "Confucius"
+		  },
+	  
+		  {
+			quote: "Having someone wonder where you are when you don’t come home at night is a very old human need.",
+			author: "Margaret Mead"
+		  },
+	  
+		  {
+			quote: "I like to listen. I have learned a great deal from listening carefully. Most people never listen.",
+			author: "Ernest Hemingway"
+		  },
+	  
+		  {
+			quote: "Forgiveness does not change the past, but it does enlarge the future.",
+			author: "Paul Boose"
+		  },
+	  
+		  {
+			quote: "If you live to be 100, I hope I live to be 100 minus 1 day, so I never have to live without you.",
+			author: "Winnie the Pooh"
+		  },
+	  
+		  {
+			quote: "If you would be loved, love, and be loveable.",
+			author: "Benjamin Franklin"
+		  },
+	  
+		  {
+			quote: "People are lonely because they build walls instead of bridges.",
+			author: "Joseph F. Newton"
+		  },
+	  
+		  {
+			quote: "Assumptions are the termites of relationships.",
+			author: "Henry Winkler"
+		  },
+	  
+		  {
+			quote: "Love is when you meet someone who tells you something new about yourself.",
+			author: "Andre Breton"
+		  },
+	  
+		  {
+			quote: "A woman knows the face of the man she loves as a sailor knows the open sea.",
+			author: "Honore de Balzac"
+		  },
+	  
+		  {
+			quote: "When a woman is talking to you, listen to what she says with her eyes.",
+			author: "Victor Hugo"
+		  },
+	  
+		  {
+			quote: "We can improve our relationships with others by leaps and bounds if we become encouragers instead of critics.",
+			author: "Joyce Meyer"
+		  },
+	  
+		  {
+			quote: "Don’t smother each other. No one can grow in the shade.",
+			author: "Leo Buscaglia"
+		  },
+	  
+		  {
+			quote: "The royal road to a man’s heart is to talk to him about the things he treasures most.",
+			author: "Dale Carnegie"
+		  },
+	  
+		  {
+			quote: "When dealing with people, remember you are not dealing with creatures of logic, but creatures of emotion.",
+			author: "Dale Carnegie"
+		  },
+	  
+	  
+		];
+	  
+		movieQuotes = [
+	  
+		  {
+			quote: "May the Force be with you",
+			author: "Star Wars, 1977"
+		  },
+	  
+		  {
+			quote: "There’s no place like home",
+			author: "The Wizard of Oz, 1939"
+		  },
+	  
+		  {
+			quote: "The first rule of Fight Club is you do not talk about Fight Club",
+			author: "Fight Club, 1999"
+		  },
+	  
+		  {
+			quote: "Keep your friends close, but your enemies closer.",
+			author: "The Godfather Part II, 1974"
+		  },
+	  
+		  {
+			quote: "They may take our lives, but they'll never take our freedom!",
+			author: "Braveheart, 1995"
+		  },
+	  
+		  {
+			quote: "The greatest trick the devil ever pulled was convincing the world he didn't exist.",
+			author: "The Usual Suspects, 1995"
+		  },
+	  
+		  {
+			quote: "Hello. My name is Inigo Montoya. You killed my father. Prepare to die.",
+			author: "The Princess Bride, 1987"
+		  },
+	  
+		  {
+			quote: "Get busy living, or get busy dying.",
+			author: "The Shawshank Redemption, 1994"
+		  },
+	  
+		  {
+			quote: "I'll be back.",
+			author: "The Terminator, 1984"
+		  },
+	  
+		  {
+			quote: "I'm also just a girl standing in front of a boy asking him to love her.",
+			author: "Notting Hill, 1999"
+		  },
+	  
+		  {
+			quote: "To call you stupid would be an insult to stupid people",
+			author: "A Fish Called Wanda, 1988"
+		  },
+	  
+		  {
+			quote: "Well, what if there is no tomorrow? There wasn't one today.",
+			author: "Groundhog Day, 1993"
+		  },
+	  
+		  {
+			quote: "You're not an asshole, Mark. You're just trying so hard to be.",
+			author: "The Social Network, 2010"
+		  },
+	  
+		  {
+			quote: "You're gonna need a bigger boat.",
+			author: "Jaws, 1975"
+		  },
+	  
+		  {
+			quote: "That’s what makes me sad: Life is so different from books.",
+			author: "Pierrot Le Fou, 1965"
+		  },
+	  
+		  {
+			quote: "Say what you like about the Nazis... they had style.",
+			author: "Outpost, 2007"
+		  },
+	  
+		  {
+			quote: "Old age. It's the only disease, Mr. Thompson, that you don't look forward to being cured of.",
+			author: "Citizen Kane, 1941"
+		  },
+	  
+		  {
+			quote: "Nobody's perfect.",
+			author: "Some Like It Hot, 1959"
+		  },
+	  
+		  {
+			quote: "Life is a box of chocolates, Forrest. You never know what you're gonna get.",
+			author: "Forrest Gump, 1994"
+		  },
+	  
+		  {
+			quote: "Louis, I think this is the beginning of a beautiful friendship.",
+			author: "Casablanca, 1942"
+		  },
+	  
+		  {
+			quote: "Man who catch fly with chopstick accomplish anything.",
+			author: "The Karate Kid, 1984"
+		  },
+	  
+		  {
+			quote: "In case I don't see ya, good afternoon, good evening, and good night!",
+			author: "The Truman Show, 1998"
+		  },
+	  
+		  {
+			quote: "I'll have what she's having.",
+			author: "When Harry Met Sally, 1989"
+		  },
+	  
+		  {
+			quote: "I'm gonna make him an offer he can't refuse.",
+			author: "The Godfather, 1972"
+		  },
+	  
+		  {
+			quote: "It’s a fool looks for logic in the chambers of the human heart.",
+			author: "Where Art Thou?, 2000"
+		  },
+	  
+	  
+		];
+	  
+		sportsQuotes = [
+	  
+		  {
+			quote: "It’s hard to beat a person who never gives up.",
+			author: "Babe Ruth, Baseball Legend" 
+		  },
+	  
+		  {
+			quote: "If you even dream of beating me, you'd better wake up and apologize",
+			author: "Muhammad Ali"
+		  },
+	  
+		  {
+			quote: "If you only ever give 90% in training then you will only ever give 90% when it matters.",
+			author: "Michael Owen"
+		  },
+	  
+		  {
+			quote: "If you are afraid of failure you don’t deserve to be successful!",
+			author: "Charles Barkley"
+		  },
+	  
+		  {
+			quote: "The best motivation always comes from within.",
+			author: "Michael Johnson"
+		  },
+	  
+		  {
+			quote: "The more I practice, the luckier I get.",
+			author: "Gary Player"
+		  },
+	  
+		  {
+			quote: "One man practicing sportsmanship is far better than 50 preaching it.",
+			author: "Knute Rockne"
+		  },
+	  
+		  {
+			quote: "Winning is not everything – but making the effort to win is.",
+			author: "Vince Lombardi"
+		  },
+	  
+		  {
+			quote: "A good coach will make his players see what they can be rather than what they are.",
+			author: "Ara Paraeghian"
+		  },
+	  
+		  {
+			quote: "You miss 100 percent of the shots you don’t take",
+			author: "Wayne Gretzky"
+		  },
+	  
+		  {
+			quote: "Gold medals aren't really made of gold. They're made of sweat, determination and a hard-to-find alloy called guts",
+			author: "Dan Gable"
+		  },
+	  
+		  {
+			quote: "Everybody has a plan until they get punched in the face",
+			author: "Mike Tyson"
+		  },
+	  
+		  {
+			quote: "Most talented players don’t always succeed. Some don’t even make the team. It’s more what’s inside.",
+			author: "Brett Favre"
+		  },
+	  
+		  {
+			quote: "If you can’t outplay them, outwork them.",
+			author: "Ben Hogan"
+		  },
+	  
+		  {
+			quote: "You can't put a limit on anything. The more you dream, the farther you get.",
+			author: "Michael Phelps"
+		  },
+	  
+		  {
+			quote: "It is not the size of a man but the size of his heart that matters.",
+			author: "Evander Holyfield"
+		  },
+	  
+		  {
+			quote: "You have to believe in yourself when no one else does - that makes you a winner right there.",
+			author: "Venus Williams"
+		  },
+	  
+		  {
+			quote: "I skate to where the puck is going to be, not where it has been.",
+			author: "Wayne Gretzy, Hockey Star"
+		  },
+	  
+		  {
+			quote: "One man can be a crucial ingredient on a team, but one man cannot make a team.",
+			author: "Kareem Abdul-Jabbar"
+		  },
+	  
+		  {
+			quote: "The more difficult the victory, the greater the happiness in winning.",
+			author: "Pele"
+		  },
+	  
+		  {
+			quote: "Experience is a hard teacher because she gives the test first, the lesson afterward.",
+			author: "Vernon Law"
+		  },
+	  
+		  {
+			quote: "Today I will do what others won’t, so tomorrow I can accomplish what others can’t.",
+			author: "Jerry Rice"
+		  },
+	  
+		  {
+			quote: "I think it’s the mark of a great player to be confident in tough situations.",
+			author: "John McEnroe"
+		  },
+	  
+		  {
+			quote: "You’re never a loser until you quit trying.",
+			author: "Mike Dikta"
+		  },
+	  
+		  {
+			quote: "Sometimes the biggest problem is in your head. You’ve got to believe.",
+			author: "Jack Nicklaus"
+		  },
+	  
+	  
+		];
+	  
+		christianityQuotes = [
+	  
+		  {
+			quote: "He is no fool who gives what he cannot keep, to gain what he cannot lose.",
+			author: "Jim Elliot"
+		  },
+	  
+		  {
+			quote: "With God all things are possible",
+			author: "Mark 10:27, The Holy Bible"
+		  },
+	  
+		  {
+			quote: "Worrying is arrogant because God knows what He's doing.",
+			author: "Barbara Cameron"
+		  },
+	  
+		  {
+			quote: "If you are too busy to pray, you are busier than God wants you to be.",
+			author: "Wanda E. Brunstetter"
+		  },
+	  
+		  {
+			quote: "As long as you do things for God, you are a Hall of Famer in Heaven's list.",
+			author: "Rick Warren"
+		  },
+	  
+		  {
+			quote: "I have never met the man I could despair of after discerning what lies in me apart from the grace of God.",
+			author: "Oswald Chambers"
+		  },
+	  
+		  {
+			quote: "Worry does not empty tomorrow of its sorrows; it empties today of its strength.",
+			author: "Corrie Ten Boom"
+		  },
+	  
+		  {
+			quote: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God",
+			author: "Ephesians 2:8, The Holy Bible"
+		  },
+	  
+		  {
+			quote: "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.",
+			author: "Romans 6:23, The Holy Bible"
+		  },
+	  
+		  {
+			quote: "Worry is the darkroom in which negatives can develop.",
+			author: "Wanda E. Brunstetter"
+		  },
+	  
+		  {
+			quote: "True faith means holding nothing back. It means putting every hope in God's fidelity to His Promises.",
+			author: "Francis Chan"
+		  },
+	  
+		  {
+			quote: "If God called us to a task, He will then qualify us for the job.",
+			author: "Jack Hyles"
+		  },
+	  
+		  {
+			quote: "God loves each of us as if there were only one of us.",
+			author: "Augustine"
+		  },
+	  
+		  {
+			quote: "Outside of Christ, I am weak; in Christ, I am strong.",
+			author: "Watchmen Nee"
+		  },
+	  
+		  {
+			quote: "We have a God who delights in impossibilities.",
+			author: "Billy Sunday"
+		  },
+	  
+		  {
+			quote: "You are the only Bible some unbelievers will ever read.",
+			author: "John MacArthur"
+		  },
+	  
+		  {
+			quote: "Our greatest fear should not be of failure but of succeeding at things in life that don’t really matter.",
+			author: "Francis Chan"
+		  },
+	  
+		  {
+			quote: "Let God’s promises shine on your problems.",
+			author: "Corrie Ten Boom"
+		  },
+	  
+		  {
+			quote: "Faith is taking the first step even when you don’t see the whole staircase.",
+			author: "Martin Luther King Jr"
+		  },
+	  
+		  {
+			quote: "One act of obedience is better than one hundred sermons.",
+			author: "Dietrich Bonhoeffer"
+		  },
+	  
+		  {
+			quote: "Aim at heaven and you will get earth thrown in. Aim at earth and you get neither.",
+			author: "C.S Lewis"
+		  },
+	  
+		  {
+			quote: "He said “Love…as I have loved you.” We cannot love too much.",
+			author: "Amy Carmichael"
+		  },
+	  
+		  {
+			quote: "If God is your partner, make your plans BIG!",
+			author: "D.L. Moody"
+		  },
+	  
+		  {
+			quote: "I used to ask God to help me. Then I asked if I might help Him. I ended up by asking God to do His work through me.",
+			author: "Hudson Taylor"
+		  },
+	  
+		  {
+			quote: "Faith does not eliminate questions. But faith knows where to take them.",
+			author: "Elisabeth Elliot"
+		  },
+	  
+		];
+	  
+	  $(document).ready(function () {
+	  
+		//Variables
+	  
+		var x = startupQuotes;
+		var i = 0;
+		var m;
+		var k;
+	  
+		//Functions
+	  
+		function firstQuote () {
+		  $(".quote").html(x[0].quote);
+		  $(".author").html("- " + x[0].author);
+		  i = 1;
+		}
+	  
+		function nextQuote () {
+		  $(".quote").html(x[i].quote);
+		  $(".author").html("- " + x[i].author);
+		}
+	  
+		function previousQuote () {
+		  $(".quote").html(x[m].quote);
+		  $(".author").html("- " + x[m].author);
+	  
+		}
+	  
+		function activeState () {
+		  $(".nav-bar-btn-span").removeClass('black-bottom-border');
+		  $("#nav-bar-btn-" + k).addClass('black-bottom-border');
+		}
+	  
+		//Navigation
+	  
+		$("#nav-bar-books, #home-books").click(function () {
+		  x = bookQuotes;
+		  k = "books";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-relationships, #home-relationships").click(function () {
+		  x = relationshipQuotes;
+		  k = "relationships";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-african, #home-african").click(function () {
+		  x = africanQuotes;
+		  k = "african";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-sports, #home-sports").click(function () {
+		  x = sportsQuotes;
+		  k = "sports";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-movies, #home-movies").click(function () {
+		  x = movieQuotes;
+		  k = "movies";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-life, #home-life").click(function () {
+		  x = lifeQuotes;
+		  k = "life";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-christianity, #home-christianity").click(function () {
+		  x = christianityQuotes;
+		  k = "christianity";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$("#nav-bar-startups, #home-startups").click(function () {
+		  x = startupQuotes;
+		  k = "startups";
+		  $("#page").attr('class', 'background-style-' + k);
+		  activeState();
+		});
+	  
+		$(".nav-bar-btn").click(function () {
+		  firstQuote();
+		});
+	  
+		$("#nav-bar-home").click(function () {
+		  $("#page").slideUp('slow');
+		  $(".home").slideDown('slow');
+		});
+	  
+		$(".title").click(function (){
+		  $("#page").slideDown('slow');
+		  $(".home").slideUp("slow");
+		  firstQuote();
+		});
+	  
+	  
+		//Buttons
+	  
+		$("#next-quote").click(function() {
+		  nextQuote();
+		  i++;
+		  if (i >= x.length) {
+			i = 0;
+		  }
+		});
+	  
+		$("#previous-quote").click(function () {  
+		  if (i <= 0) {
+			i = x.length;
+		  }
+		  m = i - 2;
+		  if (m <= -1) {
+			m = x.length - 1;
+		  }
+		  previousQuote();
+		  i--;
+		});
+	  
+		//Tweet Button
+		
+		$(".btn-tweet").click(function () {
+		  var width  = 575,
+			  height = 400,
+			  left   = ($(window).width()  - width)  / 2,
+			  top    = ($(window).height() - height) / 2,
+			  url    = 'http://twitter.com/share?text=' + x[i-1].quote + " - " + x[i-1].author,
+			  opts   = 'status=1' +
+					   ',width='  + width  +
+					   ',height=' + height +
+					   ',top='    + top    +
+					   ',left='   + left;
+		  
+			window.open(url, 'twitter', opts);
+		});
+	  
+	  });
+	  </script>
+
+
+</head>
+<body class="sub_page">
+	
+	<div class="hero_area">
+	
+</div>
+
+   </br>   </br>   </br>   </br>   
+	<div class="home">
+		
+		<div class="container">
+			<h1 class="headline">Random Quote Machine</h1>
+			<p class="intro">This is a random quote generator built with JavaScript. Just click on each section to view quotes on your favourite topic.</p>
+		
+		</div>
+
+		<!-- Columns -->
+
+		<div class="container" id="quotes-container">
+			<div class="row" id="row-1">
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-books"></div>
+
+					<div class="title" id="home-books">
+						<h4><span>Book Quotes</span></h4>
+					</div>
+				</div>
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-relationships"></div>
+
+					<div class="title" id="home-relationships">
+						<h4><span>Relationship Quotes</span></h4>
+					</div>
+				</div>
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-sports"></div>
+
+					<div class="title" id="home-sports">
+						<h4><span>Sports Quotes</span></h4>
+					</div>
+				</div>
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-life"></div>
+
+					<div class="title" id="home-life">
+						<h4><span>Life Quotes</span></h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" id="row-2">
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-movies"></div>
+
+					<div class="title" id="home-movies">
+						<h4><span>Movie Quotes</span></h4>
+					</div>
+				</div>
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-startups"></div>
+
+					<div class="title" id="home-startups">
+						<h4><span>Startup Quotes</span></h4>
+					</div>
+				</div>
+				<div class="three columns grid-cell">
+					<div class="featured-image featured-image-african"></div>
+
+					<div class="title" id="home-african">
+						<h4><span>Thought for the day</span></h4>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+				
+	
+</div> <!-- HomePage -->
+	
+	<div class="app">
+
+		<div class="hidden" id="page">
+			
+			<!-- Navigation  -->
+   
+			
+
+			<!-- End of Navigation -->
+			
+			<!-- Quotes -->
+
+			<section class="main">
+
+				<div class="container">
+					<div class="ten columns offset-by-one">
+						<div class="quotesBox" id="quotesBox">
+							<blockquote>
+								<span class="quote"></span>
+								<span class="author"></span>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				
+				<!-- End of Quotes -->
+
+				<!-- Buttons -->
+
+				<div class="container">
+					<div class="eight columns offset-by-two">
+						<div class="cta" id="cta">
+							<button class="btn btn-quote" id="previous-quote">Previous Quote</button>
+							<button class="btn btn-quote" id="next-quote">Next Quote</button>
+							<a class="button btn btn-tweet">Tweet!</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+	</div>
+  </br>  </br>
+	
+    <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <!--logo and info column-->
+        <div class="col">
+          <!--logo insert-->
+          <img src="../logo.png" alt="logo" class="footlogo" />
+          <div class="footercontent">
+            <h2 class="footerheading">ZenZone</h2>
+            <p class="footerpara">go stress free</p>
+          </div>
+        </div>
+    
+        <!--ADDRESS COLUMN-->
+    
+        <div class="footer-side-col">
+          <div class="col">
+            <h3>
+              ADDRESS
+              <div class="underline"><span></span></div>
+            </h3>
+            <p><a>Coimbatore, India</a></p>
+            <p class="email-id"><a href="mailto:zenzone119@gmail.com">zenzone119@gmail.com</a></p>
+          </div>
+          <!--HOME COLUMN-->
+          <div class="col">
+            <h3>HOME</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <!-- <li>
+                <a href="">Ranjith R B</a>
+              </li> -->
+              <li>
+                <a>Sri Ramakrishna Engineering College</a>
+              </li>
+              <li>
+                <!-- <a href="">Donate</a> -->
+                 <a>Coimbatore</a>
+              </li>
+            </ul>
+          </div>
+          <!--OUR SERVICES COLUMN-->
+         <div class="col">
+            <h3>
+              SERVICES
+              <div class="underline"><span></span></div>
+            </h3> 
+            <ul>
+              <li>
+                <a href="html/audioTherapy.html">Listen Songs</a>
+              </li>
+                <li>
+                <a href="html/readingTherapy.html">Reading Articles</a>
+              </li>
+              <li>
+                <a href="html/yogatherapy.html">Yoga</a>
+              </li>
+              <li>
+                <a href="html/qoutesTherapy.html">Quote Sharing</a>
+              </li>
+              <li>
+                <a href="html/talkingTherapy.html">Mental Assistance</a>
+              </li>
+              <li>
+                <a href="html/childTherapy.html">Play Games</a>
+               </li>
+            </ul>
+          </div> 
+          <!--CONTACTS COLUMN-->
+          <div class="col">
+            <h3>
+              CONTACTS
+              <div class="underline"><span></span></div>
+            </h3>
+            <div class="social-menu">
+              <ul>
+                <a href="https://twitter.com" target="_blank">
+                  <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+                </a>
+                <a href="https://github.com" target="_blank">
+                  <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <script>
+    const ham = document.getElementById("ham");
+    const menu = document.getElementById("menu");
+    const close = document.querySelectorAll('.close');
+    const closeMenu = () => {
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        
+        console.log("open");
+      }
+      ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+    }
+
+    const toggleMenu = () => {
+      if (menu.classList.contains("open")) {
+        menu.classList.remove("open");
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
+        console.log("open");
+      } else {
+        menu.classList.add("open");
+        ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg>'
+        console.log("close");
+      }
+    };
+    ham.addEventListener("click", toggleMenu);
+    close.forEach(ele => {
+      ele.addEventListener("click", closeMenu);
+    }
+    )
+    ham.addEventListener("click", toggleMenu);
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <script>
+      var preloader = document.getElementById('load');
+      var scroll = document.getElementById('main');
+      function myfunction(){
+          preloader.style.display='none';
+          scroll.style.overflow='scroll';
+      }
+      const backTopElement = document.getElementById("back-top-div");
+      const minScolledAmountToBackTop = 800;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY < minScolledAmountToBackTop) {
+          backTopElement.classList.add("hidden");
+        } else {
+          backTopElement.classList.remove("hidden");
+        }
+      });
+
+      const backTop = () => {
+        window.scrollTo(0, 0);
+      };
+
+      backTopElement.addEventListener("click", backTop);
+      ham.addEventListener("click", toggleMenu);
+  </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>    
+  </body>
+</html>

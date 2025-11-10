@@ -1,0 +1,17 @@
+yoga-ai-app/
+├── app.py                  # Main Streamlit App
+├── requirements.txt        # Dependencies
+├── assets/                 # Images & Audio
+│   ├── images/
+│   │   ├── tadasana.jpg
+│   │   ├── vrikshasana.jpg
+│   │   └── ...
+│   └── audio/              # Auto-generated feedback audio
+├── pose_utils.py           # Pose Detection Logic
+└── yoga_poses/             # Pose Configurations
+    ├── tadasana.json
+    ├── vrikshasana.json
+    └── ...
+
+
+    https://github.com/Manoj-2702/Yoga_Poses-Dataset

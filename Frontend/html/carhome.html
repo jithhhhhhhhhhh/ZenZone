@@ -1,0 +1,264 @@
+
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" text="text/CSS"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet" />
+  <title>ZenZone - Car fighter</title>
+  <link rel="stylesheet" href="../css/childTherapy.css" />
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .department_section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+        .heading_container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .box {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .detail-box h5 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            color: #776e65;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            background-color: #bbada0;
+            padding: 10px;
+            width: max-content;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .tile {
+            width: 100px;
+            height: 100px;
+            background: #cdc1b4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #776e65;
+            border-radius: 5px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        .controls button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            background: #8f7a66;
+            color: white;
+            border-radius: 5px;
+        }
+        .controls button:hover {
+            background: #6d5a4a;
+        }
+        .game-over {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            margin-top: 20px;
+        }
+        .score-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.score-container h3 {
+  font-size: 24px;
+  color: #8f7a66;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav>
+    <a href="../index.html"><img class="audio-logo" src="../logo.png" alt="Logo" /></a>
+
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <!-- <li><a href="#about" class=".smooth-scroll">ABOUT</a></li>
+        <li><a href="#images" class=".smooth-scroll">IMAGES </a></li>
+        <li><a href="#videos" class=".smooth-scroll">VIDEOS </a></li> -->
+      </ul>
+    </div>
+    <div class="hamburger" id="ham">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+        </path>
+      </svg>
+    </div>
+
+  </nav>
+
+  <!-- Mobile Layout Navbar -->
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <!-- <li><a class="close" href="#about">ABOUT</a></li>
+      <li><a class="close" href="#images">IMAGES </a></li>
+      <li><a class="close" href="#videos">VIDEOS </a></li> -->
+    </ul>
+  </div>
+  <!-- Mobile Layout Navbar Ends Here -->
+
+  <!-- Navbar Section Ends Here -->
+
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="../index.html">HOME</a></li>
+      <!-- <li><a class="close" href="#about">ABOUT</a></li>
+      <li><a class="close" href="#images">IMAGES </a></li>
+      <li><a class="close" href="#videos">VIDEOS </a></li> -->
+    </ul>
+  </div>
+</body>
+
+</br></br></br>
+
+<center><body>
+<a href="selectmode.html"><img src="rf11.jpg"></img></a>
+</body>
+</center>
+
+</br></br></br>
+<body>
+    <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <!--logo and info column-->
+        <div class="col">
+          <!--logo insert-->
+          <img src="../logo.png" alt="logo" class="footlogo" />
+          <div class="footercontent">
+            <h2 class="footerheading">ZenZone</h2>
+            <p class="footerpara">go stress free</p>
+          </div>
+        </div>
+    
+        <!--ADDRESS COLUMN-->
+    
+        <div class="footer-side-col">
+          <div class="col">
+            <h3>
+              ADDRESS
+              <div class="underline"><span></span></div>
+            </h3>
+            <p><a>Coimbatore, India</a></p>
+            <p class="email-id"><a href="mailto:zenzone119@gmail.com">zenzone119@gmail.com</a></p>
+          </div>
+          <!--HOME COLUMN-->
+          <div class="col">
+            <h3>HOME</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <!-- <li>
+                <a href="">Ranjith R B</a>
+              </li> -->
+              <li>
+                <a>Sri Ramakrishna Engineering College</a>
+              </li>
+              <li>
+                <!-- <a href="">Donate</a> -->
+                 <a>Coimbatore</a>
+              </li>
+            </ul>
+          </div>
+          <!--OUR SERVICES COLUMN-->
+         <div class="col">
+            <h3>
+              SERVICES
+              <div class="underline"><span></span></div>
+            </h3> 
+            <ul>
+              <li>
+                <a href="html/audioTherapy.html">Listen Songs</a>
+              </li>
+                <li>
+                <a href="html/readingTherapy.html">Reading Articles</a>
+              </li>
+              <li>
+                <a href="html/yogatherapy.html">Yoga</a>
+              </li>
+              <li>
+                <a href="html/qoutesTherapy.html">Quote Sharing</a>
+              </li>
+              <li>
+                <a href="html/talkingTherapy.html">Mental Assistance</a>
+              </li>
+              <li>
+                <a href="html/childTherapy.html">Play Games</a>
+               </li>
+            </ul>
+          </div> 
+          <!--CONTACTS COLUMN-->
+          <div class="col">
+            <h3>
+              CONTACTS
+              <div class="underline"><span></span></div>
+            </h3>
+            <div class="social-menu">
+              <ul>
+                <a href="https://twitter.com" target="_blank">
+                  <li id="social-twitter"><i class="fab fa-2x fa-twitter"></i></li>
+                </a>
+                <a href="https://github.com" target="_blank">
+                  <li id="social-github"><i class="fab fa-2x fa-github"></i></li>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <li id="social-linkedin"><i class="fab fa-2x fa-linkedin-in"></i></li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="childTherapy.js"></script>
+  </body>
+  
+  </html>

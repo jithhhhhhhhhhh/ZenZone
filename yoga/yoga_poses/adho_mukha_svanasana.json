@@ -1,0 +1,15 @@
+{
+    "name": "Adho Mukha Svanasana (Downward Dog)",
+    "required_landmarks": [
+        "LEFT_WRIST",
+        "RIGHT_WRIST",
+        "LEFT_ANKLE",
+        "RIGHT_ANKLE",
+        "LEFT_HIP",
+        "RIGHT_HIP"
+    ],
+    "angle_ranges": {
+        "hip_angle": [50, 70],
+        "shoulder_angle": [170, 190]
+    }
+}
